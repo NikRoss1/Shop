@@ -4,13 +4,28 @@
 
 <% @products.each do |p| %>
 
-<div>
 	<div class="col-md-3">
-		<%= p.title %>
-</div>
+		
+		<div>
+			<%= p.title %>
+		</div>
+		
+		<div>
+			<img src="<%= p.path_to_image %>" />
+		</div>
 
+		<div>
+			<%= p.description %>
+		</div>
+
+
+
+ 	</div>
 <% end %>
 
 </div>
+
+<br/>
+<br/>
 
 <button type="submit" class="btn btn-primary" onclick="something()">Primary</button>
