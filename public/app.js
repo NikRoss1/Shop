@@ -18,7 +18,7 @@ function add_to_cart(id)
     x = x * 1 + 1;
     window.localStorage.setItem(key, x);
 
-    фдуке('Items in your cart:' + cart_get_number_items())
+    alert('Items in your cart:' + cart_get_number_items())
 }
 
 function cart_get_number_items()
